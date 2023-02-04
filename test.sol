@@ -1,10 +1,9 @@
 pragma solidity 0.8.10;
 
 contract MyContract{
-    uint public x=10;
+    mapping(int => int) public map;
 
-    function setX(uint _x) public {
-        x = _x;
+    function setKey(int key,int value) public{
+        map[key]=value;
     }
-
 }
